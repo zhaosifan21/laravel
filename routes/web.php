@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::prefix('admin')->get('index','Admin\TestController@index');
